@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
+    <script src="https://malsup.github.io/jquery.cycle.all.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#slide").cycle("fade,shuffle,zoom,turnLeft,turnRight");
+        })
+    </script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-color: lightgray;
+        }
+
+        #slide {
+            width: 90%;
+            height: 450px;
+            margin-left: 5%;
+            margin-top: 2%;
+        }
+
+        #slide img {
+            width: 100%;
+            height: 450px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>How to create slider with animation?
+        </h1>
+    </center>
+    <section id="slide">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm08FIkScdmZNM49f7eofG5eC31lNjXCHQKA&s" alt="sliders">
+        <img src="https://imgd.aeplcdn.com/370x208/n/cw/ec/48034/2-series-gran-coupe-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80" alt="sliders">
+        <img src="https://media.istockphoto.com/id/1022249066/photo/bmw-car-on-sunset-sky.jpg?s=612x612&w=0&k=20&c=yQo7KG5fuJjv-qthkx5K2XPDEJwosZX2Q8pZlqRssCk=" alt="sliders">
+        <img src="https://www.shutterstock.com/image-photo/seattle-washington-usa-march-31-600nw-2284495465.jpg" alt="sliders">
+    </section>
+
+</body>
+
+</html>
